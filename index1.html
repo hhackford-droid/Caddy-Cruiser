@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fairway Companion - Your Personal Golf Scooter</title>
+    <style>
+        /* CSS for a Comforting, Golf Vibe */
+        :root {
+            --golf-green-comfort: #6B8E23; /* Olive/Moss Green - Calming and earthy */
+            --dark-green-accent: #3A5F0B; /* Deep Forest Green - Trustworthy */
+            --light-cream: #FCF9F6; /* Soft Off-White/Sand */
+            --text-color: #444444; /* Soft Dark Text */
+            --header-font: 'Georgia', serif; /* Classic and comforting */
+            --body-font: 'Roboto', sans-serif; /* Clean and readable */
+        }
+
+        body {
+            font-family: var(--body-font);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-cream);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--dark-green-accent);
+            color: var(--light-cream);
+            padding: 20px 5%;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: var(--header-font);
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        .section {
+            padding: 70px 5%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-family: var(--header-font);
+            font-size: 2.2em;
+            color: var(--dark-green-accent);
+            margin-bottom: 30px;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(135deg, var(--golf-green-comfort) 0%, var(--dark-green-accent) 100%);
+            color: var(--light-cream);
+            padding: 100px 5%;
+        }
+
+        #hero h2 {
+            font-size: 3.5em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        #hero h3 {
+            font-size: 1.8em;
+            color: #FFD700; /* Gold accent for price */
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background-color: #FFD700; /* Gold */
+            color: var(--dark-green-accent);
+            padding: 18px 40px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border: none;
+        }
+
+        .cta-button:hover {
+            background-color: #ffe873;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section Styling */
+        #features {
+            background-color: var(--light-cream);
+            padding-bottom: 40px;
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        
+        .feature-item h3 {
+            color: var(--golf-green-comfort);
+            margin-top: 10px;
+            font-size: 1.4em;
+        }
+
+        /* Accessibility Section */
+        #value-proposition {
+            background-color: #E8F5E9; /* Very light, comfortable green */
+        }
+
+        .value-points {
+            max-width: 1000px;
+            margin: 20px auto 0;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+        
+        .value-point {
+            width: 45%; 
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid var(--golf-green-comfort);
+        }
+
+        .value-point h4 {
+            color: var(--dark-green-accent);
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        /* Contact/Footer */
+        footer {
+            background-color: var(--dark-green-accent);
+            color: var(--light-cream);
+            padding: 30px 5%;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--light-cream);
+            text-decoration: none;
+            opacity: 0.8;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            #hero h2 {
+                font-size: 3em;
+            }
+            .features-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-item {
+                width: 90%;
+            }
+            .value-point {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Fairway Companion</h1>
+        <p>Your Personal, Accessible Path to a Better Round</p>
+    </header>
+
+    <section id="hero" class="section">
+        <h2>Unwind and Focus on Your Game.</h2>
+        <p>Introducing the Fairway Companion: the elegant electric scooter that holds your bag, guides your distances, and analyzes your swing—all for one exceptional value.</p>
+        
+        <h3>Introductory Price: $1,799.99</h3>
+        
+        <a href="#contact" class="cta-button">Secure Your Companion</a>
+    </section>
+
+    <section id="features" class="section">
+        <h2>Smart Technology, Seamless Golfing</h2>
+        <div class="features-grid">
+            
+            <div class="feature-item">
+                <h3>Built-In Rangefinder</h3>
+                <p>Pinpoint accuracy delivered directly to your view. Eliminate distractions and trust your distance for every shot.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>Personal Swing Feedback</h3>
+                <p>Receive immediate, simple analysis on your shots and swing mechanics. It's like having a coach ride along with you.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>Comfortable Bag Carry</h3>
+                <p>Designed specifically to secure and transport your golf bag effortlessly, ensuring you arrive at the ball refreshed and ready.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="value-proposition" class="section">
+        <h2>Freedom, Affordability, and Peace of Mind</h2>
+        <div class="value-points">
+            
+            <div class="value-point">
+                <h4>Accessible Course Travel</h4>
+                <p>Whether limited mobility prevents driving a cart or you simply prefer a more personal ride, The Fairway Companion is easy to operate and accessible for more golfers.</p>
+            </div>
+            
+            <div class="value-point">
+                <h4>End the Rental Fees</h4>
+                <p>Stop paying hefty, consistent cart rental costs. With our one-time purchase, you own your transportation and save money every round thereafter.</p>
+            </div>
+
+            <div class="value-point">
+                <h4>Own Your Pace</h4>
+                <p>Enjoy the serenity of the course without feeling rushed or waiting on others. Play golf at the pace that suits your comfort.</p>
+            </div>
+            
+            <div class="value-point">
+                <h4>Investment in Your Game</h4>
+                <p>Beyond transportation, the integrated rangefinder and swing feedback tools are continuous practice aids that genuinely help lower your score.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background-color: var(--golf-green-comfort); color: var(--light-cream);">
+        <h2>Ready for a Calmer, Smarter Round?</h2>
+        <p>The Fairway Companion is waiting. Connect with us to learn about pre-order availability and financing options.</p>
+        <form style="max-width: 450px; margin: 30px auto;">
+            <input type="email" placeholder="Enter Your Email Address for Updates" required 
+                   style="padding: 12px; width: 65%; margin-right: 10px; border: none; border-radius: 5px;">
+            <input type="submit" value="Keep Me Updated" class="cta-button" 
+                   style="width: 30%; margin: 0; padding: 12px; cursor: pointer; border: none; background-color: var(--dark-green-accent); color: white;">
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 The Fairway Companion. All rights reserved. | 
+        <a href="#">Support</a> | 
+        <a href="#">Warranty</a> |
+        <a href="#">Contact Us</a>
+    </footer>
+
+</body>
+</html>
